@@ -1,0 +1,57 @@
+<DSP128SGExportFile DeviceType="DSP-860" CreationDate="10/16/2020 2:08:59 PM" LastModifiedDate="10/16/2020 2:08:59 PM">
+  <Comments>
+  </Comments>
+  <ExportedObjects>
+    <SGObject Type="Analog" ReadOnly="False">
+      <DSPParameterId>Ain 1 Gain Level</DSPParameterId>
+      <ControlTitle>gain</ControlTitle>
+      <ObjectAddress IsEQObject="False" IsVUMeter="False" IsVUMeterInverted="False">
+        <DSPObjInst ToolID="AnalogIn.1.1" FWID="65793" />
+        <DSPObjectType ToolID="InGain" FWID="1" />
+        <ParamIndex ToolID="OutputLevel" FWID="4" />
+      </ObjectAddress>
+      <ParameterInfo Type="Float">
+        <MinVal>-80</MinVal>
+        <MaxVal>10</MaxVal>
+        <Resolution>1</Resolution>
+        <units>dB</units>
+        <DefaultVal>0</DefaultVal>
+        <IsReadOnly>False</IsReadOnly>
+      </ParameterInfo>
+    </SGObject>
+    <SGObject Type="Analog" ReadOnly="True">
+      <DSPParameterId>Ain 1 AMix VU</DSPParameterId>
+      <ControlTitle>left</ControlTitle>
+      <ObjectAddress IsEQObject="False" IsVUMeter="True" IsVUMeterInverted="False">
+        <DSPObjInst ToolID="AnalogIn.1.5" FWID="65798" />
+        <DSPObjectType ToolID="AMix" FWID="19" />
+        <ParamIndex ToolID="VuMeterLevel" FWID="10" />
+      </ObjectAddress>
+      <ParameterInfo Type="Float">
+        <MinVal>-60</MinVal>
+        <MaxVal>0</MaxVal>
+        <Resolution>0.1</Resolution>
+        <units>dB</units>
+        <DefaultVal>-60</DefaultVal>
+        <IsReadOnly>True</IsReadOnly>
+      </ParameterInfo>
+    </SGObject>
+    <SGObject Type="Analog" ReadOnly="True">
+      <DSPParameterId>Ain 2 AMix VU</DSPParameterId>
+      <ControlTitle>right</ControlTitle>
+      <ObjectAddress IsEQObject="False" IsVUMeter="True" IsVUMeterInverted="False">
+        <DSPObjInst ToolID="AnalogIn.2.5" FWID="66054" />
+        <DSPObjectType ToolID="AMix" FWID="19" />
+        <ParamIndex ToolID="VuMeterLevel" FWID="10" />
+      </ObjectAddress>
+      <ParameterInfo Type="Float">
+        <MinVal>-60</MinVal>
+        <MaxVal>0</MaxVal>
+        <Resolution>0.1</Resolution>
+        <units>dB</units>
+        <DefaultVal>-60</DefaultVal>
+        <IsReadOnly>True</IsReadOnly>
+      </ParameterInfo>
+    </SGObject>
+  </ExportedObjects>
+</DSP128SGExportFile>

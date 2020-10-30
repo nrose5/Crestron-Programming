@@ -1,0 +1,83 @@
+[
+ObjTp=FSgntr
+Sgntr=SGD
+RelVrs=3
+VTProeVer=6.2.00
+Schema=1
+CRCGUID=E5D48E5F-9018-4AF4-B353-4CC145450C24
+]
+;================================================================================
+[
+ObjTp=Hd
+ProjectFile=Test.vtp
+VtpGuid=8C770766-5550-4768-9CF3-28E65AD6DE56
+]
+;================================================================================
+[
+ObjTp=Symbol
+Name=Test_Home_Video Switcher.ced
+Hint=Video Switcher (Smart Object ID=1)
+Code=1
+SGControlType=Video Switcher
+SGControlName=Video Switcher
+GUID=0F73870A-56AE-4BF4-B05F-BB501FEF8FF5
+SmplCName=Test_Home_Video Switcher.ced
+SMWRev=4.02.19
+Expand=expand_random
+HelpID=10016
+;Define the number of inputs, outputs and parameters
+MinVariableInputs=1
+MaxVariableInputs=1
+MinVariableOutputs=1
+MaxVariableOutputs=1
+NumFixedParams=1
+MinVariableInputsList2=2
+MaxVariableInputsList2=2
+MinVariableOutputsList2=2
+MaxVariableOutputsList2=2
+MinVariableInputsList3=0
+MaxVariableInputsList3=0
+MinVariableOutputsList3=0
+MaxVariableOutputsList3=0
+;Define the cues, and signal types  each input, output and parameter.
+InputCue1=[~UNUSED3~]
+InputSigType1=Digital
+OutputCue1=Screen 1 Source Changed
+OutputSigType1=Digital
+InputList2Cue1=Number of visible screens
+InputList2SigType1=Analog
+OutputList2Cue1=[~UNUSED3~]
+OutputList2SigType1=Analog
+InputList2Cue2=Screen 1 Source Selection
+InputList2SigType2=Analog
+OutputList2Cue2=Screen 1 Source Selection
+OutputList2SigType2=Analog
+ParamCue1=SmartObjectId
+ParamSigType1=Constant
+MPp=1
+Pp1=1
+CedH=1
+SmartObjId=1d
+]
+; Parameter Properties for Smart Object ID
+[
+ObjTp=Dp
+H=1
+Tp=1
+HD=TRUE
+DV=1d
+NF=1
+DNF=1
+EncFmt=0
+DVLF=1
+Sgn=0
+]
+; Smart Objects Definition section
+[
+ObjTp=CED
+H=1
+Name=Test_Home_Video Switcher.ced
+;Cedver is the version of the Smart Graphics control, not the CED file format.
+;If the control definition changes, increment this.
+CedVer=1
+]

@@ -1,0 +1,35 @@
+DIGITAL_INPUT src_change;
+
+// Video sources
+DIGITAL_INPUT hdmi;
+DIGITAL_INPUT bluray;
+DIGITAL_INPUT dcam;
+                
+// Audio sources
+DIGITAL_INPUT aux;
+DIGITAL_INPUT program;
+
+ANALOG_OUTPUT video;
+ANALOG_OUTPUT audio;
+
+CHANGE src_change {
+	// Calculate video
+	if (hdmi) {
+    	video = 1;
+	} else if (bluray) {
+    	video = 2;
+	} else if (dcam) {
+    	video = 3;
+	} else {
+    	video = 0;
+	}
+
+	// Calculate audio
+	if (aux) {
+    	audio = 1;
+	} else if (program) {
+     	audio = video + 5;
+	} else {
+     	audio = 0;
+	}	
+}

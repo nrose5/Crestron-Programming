@@ -1,0 +1,83 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+test - Simpl Windows and Simpl+ program with a very simple print statement on the simpl+ side
+
+Features:
+-It's literally just a print statement, what more do you want from me?
+-Showcases how to use for loops, if statements, and integers in Simpl+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Program 1 - Simpl Windows program that mostly works aside from a few audio selection bugs
+'
+Features:
+-Source Selection (Drag and Drop)
+-Blank Screen
+-Volume Adjustment
+-Microphone Adjustment
+
+Routing:
+-2 Microphone receivers
+-Audio and display route to Scaler
+-Audio uses Digital Mixer 1
+
+Equipment:
+-Crestron DMPS3-4K-350-C (DM Switcher)
+-Crestron DM-RMC-4K-SCALER-C (Scaler)
+-Crestron CEN-SW-POE-5 (PoE Switch)
+-Crestron TSW-760-B-S (Touch Panel)
+-Shure ULXD4 H50 Receiver W/SM58 Handheld Mic (Receiver/Mic Combo)
+-Shure BLX4R H9 Receiver W/Lapel (Receiver/Mic Combo)
+-Sharp LC-48lE55U (TV)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Program 2 - Simpl Windows & Simpl+ program with the same interface as Program 1 but all known bugs have been fixed
+
+Features:
+-Source Selection (Drag & Drop)
+-Blank Screen
+-Volume Adjustment
+-Microphone Adjustment
+
+Routing:
+-2 Microphone receivers
+-Display routes to scaler
+-Audio routes to aux cord (This allows audio and video to be cut off independently)
+
+Equipment:
+-Crestron DMPS3-4K-350-C (DM Switcher)
+-Crestron DM-RMC-4K-SCALER-C (Scaler)
+-Crestron CEN-SW-POE-5 (PoE Switch)
+-Crestron TSW-760-B-S (Touch Panel)
+-Shure ULXD4 H50 Receiver W/SM58 Handheld Mic (Receiver/Mic Combo)
+-Shure BLX4R H9 Receiver W/Lapel (Receiver/Mic Combo)
+-Sharp LC-48lE55U (TV)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Program 3 - Simpl Windows & Simpl+ program similar to Program 2 but with source selection buttons instead of drag & drop, also has DVD and TV control
+Features:
+-End/Start class screens & buttons
+-Programmed hard buttons
+-Blu-Ray CEC controls
+-TV IR power toggle
+-Power behavior:
+	-Blu-Ray shuts off when "End Class" is confirmed
+	-TV toggles the power when "End Class" is confirmed and when "Start Class" is selected
+	-TV power toggle is on main menu in case the TV gets shut off when the class starts or vice versa
+
+Routing:
+-2 Microphone receivers
+-Display routes to scaler
+-Audio routes to aux cord (This allows audio and video to be cut off independently)
+-DVD player CEC control
+-TV IR control
+
+Equipment:
+-Crestron DMPS3-4K-350-C (DM Switcher)
+-Crestron DM-RMC-4K-SCALER-C (Scaler)
+-Crestron CEN-SW-POE-5 (PoE Switch)
+-Crestron TSW-760-B-S (Touch Panel)
+-Shure ULXD4 H50 Receiver W/SM58 Handheld Mic (Receiver/Mic Combo)
+-Shure BLX4R H9 Receiver W/Lapel (Receiver/Mic Combo)
+-Sharp LC-48lE55U (TV)
+-Sony BDP-S3700 (Blu-Ray Player)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
