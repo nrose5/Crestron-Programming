@@ -1,0 +1,29 @@
+DIGITAL_INPUT class_start;
+DIGITAL_INPUT activity;
+DIGITAL_INPUT class_end;
+
+DIGITAL_OUTPUT timeout;
+                
+// 1 = 1/100 of a second
+LONG_INTEGER wait_time;
+                  
+// Start timer when the timer is done this sends a shutdown signal
+PUSH class_start {
+	//3hrs = 1080000
+	//20s = 2000
+	wait_time = 1080000;	
+		Wait (wait_time, waiting) {
+		print("Class timed out");
+		pulse(1, timeout);		
+	}
+}
+ 
+// When a signal is received the timer resets
+PUSH activity {
+	RetimeWait(wait_time, waiting);
+}
+             
+// When a signal is received the timer is stopped
+PUSH class_end {
+	CancelWait(waiting);
+}
